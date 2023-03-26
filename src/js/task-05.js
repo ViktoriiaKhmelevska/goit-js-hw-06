@@ -6,25 +6,15 @@ const inputEl = document.querySelector(`#name-input`);
 const outputEl = document.querySelector(`#name-output`);
 // console.dir(inputEl);
 inputEl.addEventListener('change', onInput)
-// inputEl.addEventListener('change', onChange)
 
 function onInput(event) {
     event.preventDefault();
     if (!inputEl.value) {
         console.log(inputEl.value);
-         outputEl.textContent = inputEl.value;
-        // outputEl.value = 'Anonymous';
+         outputEl.textContent = 'Anonymous';
         return;
     } else {
-        // console.log(inputEl.value);
         outputEl.textContent = inputEl.value;
     };
 }
-//     // console.log(evt);
-//     console.log(inputEl.value);
-//     // log()
-// }
 
-// function onChange(evt){
-//     alert('Напишіть ще щось')
-// }
