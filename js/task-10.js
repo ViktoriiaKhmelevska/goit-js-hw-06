@@ -15,11 +15,20 @@
 // Всі елементи повинні мати випадковий колір фону у форматі HEX. Використовуй готову функцію getRandomHexColor для отримання кольору.
 
 // Створи функцію destroyBoxes(), яка очищає вміст div#boxes, у такий спосіб видаляючи всі створені елементи.
-const divEl = document.querySelector(`#boxes`)
-
+const divEl = document.querySelector(`#boxes`);
+const divControlsEl = document.querySelector("input");
+const amount = divControlsEl.getAttribute("textContent");
+console.log(amount);
+console.log(divControlsEl);
 function destroyBoxes() {
-
+    divEl.innerHTML = ``;
 }
+
+function createBoxes(amount) {
+
+ }
+
+
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
